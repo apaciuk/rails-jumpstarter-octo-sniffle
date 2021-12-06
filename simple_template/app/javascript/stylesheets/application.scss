@@ -1,0 +1,19 @@
+@import "bootstrap";
+@import "sticky-footer";
+@import "announcements";
+
+// Fixes bootstrap nav-brand container overlap
+@include media-breakpoint-down(xs) {
+  .container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+
+// Masquerade alert shouldn't have a bottom margin
+body > .alert {
+  margin-bottom: 0;
+}
